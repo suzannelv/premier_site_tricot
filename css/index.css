@@ -1,0 +1,320 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 1200px;
+    margin: auto;
+}
+body{
+    background-color: #f3f5f7;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.clearfix::before, clearfix::after{
+    content:'';
+    display:table
+}
+.clearfix::after{
+    clear: both;
+}
+/*  写头部  */
+.header{
+    height: 42px;
+    /* background-color: pink; */
+    /* margin-top: 30px;
+    margin-bottom:30px; */
+    /* 如果改成0，就把wrapper中的外边距覆盖了 */
+    margin:30px auto;
+
+}
+.header h1 img{
+    width: 180px;
+    border-radius: 50px;
+}
+h1{
+    float:left;
+}
+.nav{ 
+    float:left;
+    height: 42px;
+    margin-left:70px;
+   
+    /* background-color: green; */
+}
+.nav li{
+    float:left;
+    margin-right:26px;
+}
+.nav li a{
+    display: block;
+    padding: 0 9px;
+    height: 42px;
+line-height: 42px;
+font-size: 18px;
+color:darkslateblue
+}
+    /* border-bottom: 2px solid blue;
+*/
+.nav li a:hover{
+    border-bottom: 2px solid skyblue;
+}
+.search{
+    float:left;
+    margin-left: 59px;
+    width: 412px;
+    height:42px;
+    border:1px solid skyblue;
+  
+}
+.search input{
+    float:left;
+    /* 使字体往右挪 */
+    padding-left: 20px;
+    /* 左右宽高加一起要小于或等于父级，否则及时即使浮动也上不去*/
+    width: 360px;
+    height: 40px;
+    border:0;
+    background-repeat: no-repeat;
+}
+/* 控制placeholder样式 */
+.search input::placeholder{
+    font-size: 14px;
+    color:azure;
+}
+.search button{
+    float:left;
+    width: 50px;
+    height: 40px;
+    background-image: url(../img/chercher.png);
+    border:0;
+}
+.user{
+    float:right;
+    margin-right: 28px;
+    height: 42px;
+    line-height: 42px;
+
+}
+.user img{
+    /*  调节图片垂直对齐方式*/
+    vertical-align: middle;
+    border-radius: 20px;
+}
+/* 轮播图 */
+.banner{
+    height: 420px;
+    background-color: bisque;
+}
+.banner .wrapper{
+    height: 420px;
+    background-image: url(../img/banner.jpg);
+
+    background-size: cover;
+
+}
+.banner .left{
+    float: left;
+    padding:0 20px;
+    width: 190px;
+    height: 420px;
+    background-color: rgb(222, 184, 135, 0.3);
+    /* 行高属于控制文字的属性,能继承 */
+    line-height: 44px;
+}
+.banner .left span{
+    float: right;
+
+}
+.banner .left a{
+    font-size: 14px;
+    color: rgb(32, 61, 62);
+}
+.banner .left a:hover{
+    color:brown;
+}
+
+
+.banner .right{
+    float: right;
+    margin-top:50px;
+    width: 228px;
+    height: 300px;
+    background-color: rgb(229, 229, 131, 0.3);
+}
+.banner .right h2{
+    height: 40px;
+    background-color: rgba(183, 201, 112, 0.553);
+    text-align: center;
+    line-height: 40px;
+    color: #5d8dbc;
+}
+.banner .right .content{
+    padding: 0 18px;
+
+}
+.banner .right .content dl{
+    padding: 12px 0;
+    border-bottom: 2px solid burlywood;
+    border-bottom: 2px solid cadetblue;
+}
+.banner .right .content. dt{
+    font-size: 16px;
+    color: darkgray;
+}
+.banner .right .content .dd{
+    font-size: 14px;
+    color: lightgrey;
+}
+.banner .right .more{
+    display: block;
+    margin: 15px auto 0;
+    width: 200px;
+    height: 40px;
+    border:1px solid rgb(35, 171, 216);
+    font-size: 16px;
+    color: #5d8dbc;
+    font-weight: 700;
+    text-align: center;
+    line-height: 40px;
+
+}
+.goods{
+    margin-top:8px;
+    padding-left: 34px;
+    padding-right: 26px;
+    height: 60px;
+    background-color: #f2ece4;
+    box-shadow: 0px 2px 3px 0px lightskyblue;
+    line-height: 60px;
+}
+.goods h2{
+    float: left;
+    font-size: 16px;
+    font-weight: 400;
+    color: #5d8dbc;
+}
+.goods ul{
+    float:left;
+    margin-left:30px;
+}
+.goods ul li{
+    float:left;
+
+}
+.goods li a{
+
+    border-left:1px solid gray;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 16px;
+    color:darkblue;
+
+}
+.goods .autres{
+    float: right;
+    font-size: 14px;
+    color: #5d8dbc;
+}
+/*  产品展示*/
+.box{
+    margin-top: 35px;
+}
+.box .title{
+    height: 40px;
+    /* background-color: pink; */
+}
+.box .title h2{
+    float: left;
+    font-size: 20px;
+    color: #5d8dbc;
+    font-weight: 400;
+}
+.box .title a{
+    float:right;
+    margin-right: 30px;
+    font-size: 12px;
+    color: chocolate;
+}
+.box .content{
+    overflow: hidden;
+}
+.box .content li{
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    width: 228px;
+    height: 290px;
+    /* background-color: #5d8dbc; */
+    background-color: white;
+    text-align: center;
+
+}
+.box .content li:nth-child(5n){
+    margin-right: 0;
+}
+.box .content li h3{
+    padding:10px;
+    font-size: 14px;
+    color: chocolate;
+    font-weight: 400;
+}
+.box .content li p{
+    padding: 0 10px;
+    font-size: 12px;
+    color: darkgoldenrod;
+
+}
+.box .content li span{
+    color: coral;
+}
+.footer{
+    
+    margin-top: 40px;
+    padding-top:30px;
+    height: 417px;
+    background-color: white;
+}
+.footer .left{
+    float: left;
+}
+.footer .left p{
+    margin:20 0 10px;
+    font-size: 14px;
+    color: chocolate;
+}
+.footer .left a{
+    display: inline-block;
+    margin-top: 20px;
+    width: 120px;
+    height: 36px;
+    border: 1px solid transparent;
+    background-color: rgba(222, 184, 135, 0.5);
+    text-align: center;
+    line-height: 36px;
+    font-size: 16px;
+    /* color: #5d8dbc; */
+}
+.footer .right{
+    float: right;
+
+}
+.footer .right dl{
+    float: left;
+    margin-left: 160px;
+    font-size: 14px;
+}
+.footer .right dt{
+    /* font-size: 14px; */
+    font-weight: bold;
+    color: brown;
+}
+.footer .right dd{
+    /* font-size: 14px; */
+    color: chocolate;
+}

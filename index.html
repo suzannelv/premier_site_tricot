@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="./css/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 头部header：负责头部区域的样式 wrapper只负责版心的效果 -->
+    <div class="header wrapper">
+        <h1>
+            <a href="#"><img src="./img/logo.jpg" alt=""></a>
+        </h1>
+        <!-- nav 纯文字区局可以不给宽-->
+        <div class="nav">
+            <ul>
+                <li><a href="#">Page principale</a></li>
+                <li><a href="#">Collection</a></li>
+                <li><a href="#">Atelier</a></li>
+            </ul>
+
+        </div>
+        <div class="search">
+            <input type="text" placeholder="chercher...">
+            <button></button>
+        </div>
+        <div class="user">
+            <img src="./img/user.jpg" alt="">
+            <span>Lili</span>
+        </div>
+    </div>
+    <!-- 轮播图 -->
+    <div class="banner">
+        <div class="wrapper">
+            <div class="left">
+            <ul>
+                <li><a href="#">Nouveautés <span>></span></a></li>
+                <li><a href="#">Catalogues <span>></span></a></li>
+                <li><a href="#">Fiches modèles <span>></span></a></li>
+                <li><a href="#">Personnages <span>></span></a></li>
+                <li><a href="#">Animaux <span>></span></a></li>
+                <li><a href="#">Poupées <span>></span></a></li>
+                <li><a href="#">Découverte <span>></span></a></li>
+                <li><a href="#">Petit prix <span>></span></a></li>
+                <li><a href="#">Autres <span>></span></a></li>
+                
+            </ul>
+        </div>
+            <div class="right">
+                <h2>Mon Atelier</h2>
+                <div class="content">
+                    <dl>
+                        <dt>Cours débutant</dt>
+                        <dd>A partir de 1 janvier 2023</dd>
+                    </dl>
+                    <dl>
+                        <dt>Cours niveau intermédiaire</dt>
+                        <dd>A partir de 1 mars 2023</dd>
+                    </dl>
+                    <dl>
+                        <dt>Cours avancés</dt>
+                        <dd>A partir de 1 mai 2023</dd>
+                    </dl>
+                </div>
+                <a href="#" class="more">Pour savoir plus...</a>
+
+
+            </div>
+        </div>
+
+    </div>
+    <!-- 推荐 -->
+    <div class="goods wrapper">
+        <h2>Sélection pour vous</h2>
+          <ul>
+            <li><a href="#">Femme</a></li>
+            <li><a href="#">Homme</a></li>
+            <li><a href="#">Enfant</a></li>
+            <li><a href="#">Accessoires</a></li>
+            <li><a href="#">Mercerie</a></li>
+            <li><a href="#">files & laines</a></li>
+          </ul>
+          <a href="#" class="autres">Autres</a>
+        
+
+    </div>  
+    <!-- 产品展示 -->
+    <div class="box wrapper" >
+        <div class="title">
+            <h2>Sélections</h2>
+            <a href="#">Voir plus</a>
+
+        </div>
+        <div class="content">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./img/lapin-removebg-preview.png" alt="">
+                        <h3>Lapin</h3>
+                        <p><span>Age:</span>1 ans</p>
+                    </a>
+                </li>
+                <li>   
+                    <a href="#">
+                        <img src="./img/ane-removebg-preview.png" alt="">
+                        <h3>Ane</h3>
+                        <p><span>Age:</span>6 mois</p>
+                    </a>
+                </li>
+                <li>   
+                    <a href="#">
+                        <img src="./img/chat_blanc-removebg-preview.png" alt="">
+                        <h3>Chat</h3>
+                        <p><span>Age:</span>2 mois</p>
+                    </a>
+               </li>
+                <li>   
+                    <a href="#">
+                        <img src="./img/chien-removebg-preview.png" alt="">
+                        <h3>Chien</h3>
+                        <p><span>Age:</span>2 mois</p>
+                    </a>
+               </li>
+                <li>   
+                    <a href="#">
+                        <img src="./img/grenouille-removebg-preview.png" alt="">
+                        <h3>Grenouille</h3>
+                        <p><span>Age:</span>1 ans</p>
+                    </a>
+                </li>
+                <li>   
+                    <a href="#">
+                        <img src="./img/lacoste-removebg-preview.png" alt="">
+                        <h3>Coco</h3>
+                        <p><span>Age:</span>3 mois</p>
+                    </a>
+            </li>
+                <li>   
+                    <a href="#">
+                        <img src="./img/mouton-removebg-preview.png" alt="">
+                        <h3>Moutons</h3>
+                        <p><span>Age:</span>7 mois</p>
+                    </a>
+            </li>
+                <li>   
+                    <a href="#">
+                        <img src="./img/panda-removebg-preview.png" alt="">
+                        <h3>Panda</h3>
+                        <p><span>Age:</span>1 ans</p>
+                    </a>
+            </li>
+                <li>   
+                    <a href="#">
+                        <img src="./img/rat-removebg-preview.png" alt="">
+                        <h3>Lapin</h3>
+                        <p><span>Age:</span>2 ans</p>
+                    </a>
+            </li>
+                <li>   
+                    <a href="#">
+                        <img src="./img/vinny-removebg-preview.png" alt="">
+                        <h3>Winnie</h3>
+                        <p><span>Age:</span>1 ans</p>
+                    </a>
+            </li>
+            </ul>
+        </div>
+    </div>
+    <!-- partie footer 注意要清除浮动的影响，课程的li 的父级。
+    因为li 都浮动了， 脱标，撑不开父级的高度-->
+    <div class="footer">
+        <div class="wrapper">
+            <div class="left">
+                <img src="./img/footer-removebg-preview.png" alt="">
+                <p>Réalisez votre ouvrage avec votre passion, je vais vous accompagner dans <br>tous vos projets tricots et crochets. 
+                Vous découvrez que le monde de tricot <br> est rempli plein d'amour et d'inspiration! 
+                 </p>
+                 <a href="#">Télécharger APP</a>
+
+            </div>
+            <div class="right">
+                <dl>
+                    <dt>Informations</dt>
+                    <dd><a href="#">Tarif</a></dd>
+                    <dd><a href="#">Notre laine</a></dd>
+                    <dd><a href="#">Solde</a></dd>
+                    <dd><a href="#">Aide et contact</a></dd>
+                </dl>
+                <dl>
+                    <dt>Services</dt>
+                    <dd><a href="#">Cours</a></dd>
+                    <dd><a href="#">Plateform</a></dd>
+                    <dd><a href="#">Livraison</a></dd>
+                    <dd><a href="#">Conseils</a></dd>
+                </dl>
+                <dl>
+                    <dt>Informations</dt>
+                    <dd><a href="#">Tarif</a></dd>
+                    <dd><a href="#">Notre laine</a></dd>
+                    <dd><a href="#">Solde</a></dd>
+                    <dd><a href="#">Aide et contact</a></dd>
+                </dl>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
