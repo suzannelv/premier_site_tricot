@@ -318,3 +318,13 @@ color:darkslateblue
     /* font-size: 14px; */
     color: chocolate;
 }
+/* 定位小图 */
+.box .content li{
+    position:relative;
+}
+.box .content li .cadeau{
+    position: absolute;
+    top:4px;
+    right:-4px;
+    
+}
